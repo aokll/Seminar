@@ -7,3 +7,19 @@
 82 -> 10
 
 9012 -> 12*/
+
+int func(int x)
+{
+    int res = 0;;
+String s = x.ToString();
+char[] arr = s.ToCharArray();
+
+for(int i = 0; i < arr.Length; i++){
+    int k = arr[i] - '0';
+    res += k;
+}
+return res;
+}
+
+int a = int.Parse(Console.ReadLine()!);
+Console.WriteLine(func(a));
