@@ -4,6 +4,9 @@
 
 [345, 897, 568, 234] -> 2*/
 
+
+
+
 int[] func(int len)
 {
     int[] arr = new int[len];
@@ -15,18 +18,21 @@ int[] func(int len)
     return arr;
 }
 
-int func2(int[] mass){
+
 int k = 0;
+int o = int.Parse(Console.ReadLine()!);
+int[] mass = func(o);
+
+
 for(int i = 0; i < mass.Length; i++)
 {
-    
-    if(mass[i]%2==0){
+    if(mass[i]%2 == 0){
         k++;
     }
     Console.Write(mass[i] + " ");
 }
-return k;
-}
 
-Console.Write(func(Random().Next(1,5)));
+
+Console.WriteLine();
+Console.Write($"количество четных чисел = {k}");
 
