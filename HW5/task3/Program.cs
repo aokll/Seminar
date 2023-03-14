@@ -27,4 +27,4 @@ for(int i = 0; i < mass.Length; i++)
     Console.Write($"{mass[i]} ");
 }
 Console.WriteLine();
-Console.Write($"[{min}...{max}] -> {min+max}");
+Console.Write($"[{min}...{max}] -> {max-min}");
